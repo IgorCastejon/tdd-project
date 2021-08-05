@@ -1,0 +1,5 @@
+No processo TDD apresentado na figura, há um fluxo associado à escrita dos testes funcionais e à escrita dos testes de unidade. O processo é iniciado com a escrita de um teste funcional para a aplicação. Caso o teste funcional falhe, entra-se no ciclo de teste de unidade/desenvolvimento. 
+
+Nesse ciclo de teste de unidade/desenvolvimento, um teste de unidade é escrito para uma pequena parte de código, inicialmente falhando, e depois é escrito o trecho de código mínimo de forma a passar no teste, até que todos os testes necessários passem e o teste funcional passe. 
+
+Caso o teste funcional passe e não seja necessário realizar refatorações na aplicação, retornamos ao início do processo e mais um novo teste funcional deve ser escrito caso seja necessário. Caso sejam realizadas refatorações na aplicação, após o sucesso de um teste de unidade ou de um teste funcional, é necessário retornar ao ciclo de teste de unidade/desenvolvimento para garantir que a refatoração não modificou o comportamento da aplicação.
