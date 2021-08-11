@@ -91,6 +91,12 @@ AUTHENTICATION_BACKENDS = [
     'accounts.authentication.PasswordlessAuthenticationBackend',
 ]
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'testesofttest@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
