@@ -1,6 +1,6 @@
 from django.test import TestCase
 import accounts.views
-from unittest.mock import patch
+from unittest.mock import patch, call
 from accounts.models import Token
 
 class SendLoginEmailViewTest(TestCase):
